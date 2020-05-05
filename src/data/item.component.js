@@ -5,9 +5,9 @@
     .component('itemList', {
       templateUrl: 'src/menuapp/templates/item.html',
       bindings: {
-        item: '<'
+        items: '<'
       }
-    });
+    })
     
     })();
     

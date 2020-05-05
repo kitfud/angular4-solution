@@ -2,7 +2,7 @@
     'use strict';
     
     angular.module('data')
-    .controller('DataController', DataController);
+    .controller('DataController', DataController)
     
     
     DataController.$inject = ['items'];

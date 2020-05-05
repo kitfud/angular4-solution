@@ -37,7 +37,7 @@
         templateUrl: 'src/menuapp/templates/itemHome.html',
         controller: 'ItemController as mainList',
         resolve: {
-          item: ['MenuDataService','$stateParams', function (MenuDataService,$stateParams) {
+          items: ['MenuDataService','$stateParams', function (MenuDataService,$stateParams) {
             return MenuDataService.getItemsForCategory($stateParams.itemId);
           }]
         }

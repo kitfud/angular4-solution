@@ -5,13 +5,10 @@
     .controller('ItemController', ItemController)
     
     
-  ItemController.$inject =['item']
-  function ItemController(item) {
+  ItemController.$inject =['items']
+  function ItemController(items) {
     var mainList =this;
-    mainList.item = item;
-  
-   
-  
+    mainList.items = items; 
 
     }
     

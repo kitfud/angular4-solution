@@ -5,8 +5,8 @@
     .controller('DataController', DataController);
     
     
-    DataController.$inject = ['MenuDataService', 'items'];
-    function DataController(MenuDataService, items) {
+    DataController.$inject = ['items'];
+    function DataController(items) {
       var mainList = this;
       mainList.items = items;
     }

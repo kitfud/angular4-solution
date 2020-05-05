@@ -26,6 +26,7 @@
         resolve: {
           items: ['MenuDataService', function (MenuDataService) {
             return MenuDataService.getAllCategories();
+            //return MenuDataService.getItemsForCategory("PF");
           }]
         }
       })
@@ -36,8 +37,8 @@
         templateUrl: 'src/menuapp/templates/itemHome.html',
         controller: 'ItemController as mainList',
         resolve: {
-          item: ['MenuDataService', function (MenuDataService,$stateProvider) {
-            return MenuDataService.getItemsForCategory("PF");
+          item: ['MenuDataService','$stateParams', function (MenuDataService,$stateParams) {
+            return MenuDataService.getItemsForCategory($stateParams.itemId);
           }]
         }
         

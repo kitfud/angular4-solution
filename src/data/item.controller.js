@@ -5,9 +5,11 @@
     .controller('ItemController', ItemController)
     
     
-  ItemController.$inject =['MenuDataService']
-  function ItemController(MenuDataService) {
-    var mainList = this;
+  ItemController.$inject =['item']
+  function ItemController(item) {
+    var mainList =this;
+    mainList.item = item;
+  
    
   
 

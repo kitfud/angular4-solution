@@ -32,8 +32,8 @@
       })
     
       // Item detail
-      .state('itemDetail', {
-        url: '/item-detail/{itemId}',
+      .state('items', {
+        url: '/items/{itemId}',
         templateUrl: 'src/menuapp/templates/itemHome.html',
         controller: 'ItemController as mainList',
         resolve: {
